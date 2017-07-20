@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apply For a Job</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/sticky-footer.css" rel="stylesheet">
+    <style>/**Minor CSS changes that didnt need their own file**/    
+        .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus { /*Change the color of navbar items on hover*/
+            background-color: #EEEEEE;
+        }
+        li, select{
+            padding-top: 5px;
+        }
+        .form-container-padding{
+            padding-top: 30px;
+        }
+        h1{
+            color: rgb(28, 158, 203);
+        }
+        .no-link{
+            color: #337ab7;
+        }
+        textarea{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <!--=======================NAVBAR ELEMENTS DOWN BELOW, THIS IS THE DEFAULT NAV SYSTEM====================-->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand active" href="#">Okanagan Staffing &nbsp; / &nbsp;<small>Apply for a job</small></a>            
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.okanaganstaffing.com/">Home</a></li>
+                    <li><a href="http://www.okanaganstaffing.com/testing/">Testing</a></li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Staffing Solutions<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/staffing-solutions/">Staffing Solutions</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/temporary-staffing/">Temporary Staffing</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/permanent-saffing/">Permanent Staffing</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/staffing-solutions/frequently-asked-questions/">Frequenty Asked Questions</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Client Solutions<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/client-solutions/">Client Solutions</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/business-skill-evaluations/">Business Skill Evaluations</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/human-resources-consulting/">Human Resources Consulting</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/corporate-outplacement-services/">Corporate Outplacement Services</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/client-solutions/client-testimonials/">Client Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Job Seeker Services<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/job-seeker-services/">Job Seeker Services</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/job-openings/">job Openings</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/application-process/">Application Process</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/frequently-asked-questions/">Frequenty Asked Questions</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/applicants-success-stories/">Applicant Success Stories</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/job-seeker-services/resume-tips/">Resume Writing Tips</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/about-us/about-us/">About Us</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/about-us/community-events/">Community Events</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/about-us/kelowna/">About Kelowna</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://www.okanaganstaffing.com/contact/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--=========================================END NAVBAR=============================================-->
+
+    <div class="container"> <!--Main body contents, footer will be added in a container-fluid later on -->
+
+        <div class="page-header">
+                <h1>Job Applicant Form: &nbsp; <small>Areas Of Expertise</small></h1>
+        </div>
+        <ol class="breadcrumb no-link">
+            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/job-openings/">Job Openings </a></li>
+            <li>Apply</li>
+            <li>Basic Application</li> <!--Link back to basicForm before production-->
+            <li>Education &amp; Employment</li>
+            <li><strong>Areas Of Expertise</strong></li>
+            <li>Avaliability &amp; Logistics</li>
+            <li>Upload &amp; Submit</li>
+        </ol>
+
+        <form method="post" action="AreOfExp.php">
+            <div class="well" style="margin-top: 70px;">
+                <label>What are your areas of expertise? Check all that apply:</label>
+                <div class="form-group" style="padding-left: 12px;">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="accountingEx" value="Accounting/Finance">Accounting/Finance</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="administrative" value="Administrative Support">Administrative Support</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="bookKeeping" value="Bookkeeping">Bookkeeping</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="business" value="Business Operations">Business Operations</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="construction" value="Construction">Construction</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="customerService" value="Customer Service">Customer Service</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="dataEntry" value="Data Entry">Data Entry</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="engineering" value="Engineering">Engineering</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="equipment" value="Equipment Operators">Equipment Operators</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="foodServices" value="Food Services">Food Service</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="generalLabour" value="General Labour">General Labour</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="healthSafety" value="Health and Safety">Health &amp; Safety</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="healthcare" value="Healthcare">Healthcare</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="hospitality" value="Hospitality/Tourism">Hospitality/Tourism</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="humanResources" value="Human Resources/Training">Human Resources/Training</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="infoTechnology" value="Information Technologies">Information Technologies</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="landscaping" value="Landscaping/Agriculture">Landscaping/Agriculture</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="legalAssistant" value="Legal Assistant/Paralegal">Legal Assistant/Paralegal</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="manufacture" value="Manufacturing/HeavyIndustry/Production line">Manufacturing/Heavy Industry/Production Line</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="marketing" value="Marketing/Advertising">Marketing/Advertising</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="management" value="Management">Management</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="medical" value="Medical/Dental Office">Medical/Dental Office Administration</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="oilGas" value="Oil and Gas Rigging">Oil &amp; Gas Rigging</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="payrollEx" value="Payroll/Benefits Administration">Payrol/Benefits Administration</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="projectMan" value="Project Management">Project Management</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="reception" value="Reception">Reception</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="retail" value="Retail">Retail</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="sales" value="Sales">Sales</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="transport" value="Technical Transport/Logistics">Technical Transport/Logistics</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="trades" value="Trades">Trades</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="warehouse" value="Warehouse">Warehouse</label>
+                            </div>
+                        </div> 
+                    </div><!--END OF ROW-->
+                </div>
+            </div><!--END OF WELL 1 (Area's Of Expertise)-->
+            <div class="well">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-4"><label>Please list which software programs you are experienced and proficient in</label></div>
+                        <div class="col-sm-8">
+                            <div class="alert alert-info" role="alert"><strong>NOTE!&nbsp;&nbsp;</strong>If you are not proficient in any of these areas,  or you are applying 
+                            for a LABOUR/TRADES/HOSPITALITY job, please skip this section</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <br />Accounting<br />
+                            <input type="text" maxLength="100" class="form-control" name="accounting" placeholder="Ex: Quickbooks, GnuCash">
+                            <br />Banking<br />
+                            <input type="text" maxLength="100" class="form-control" name="banking">
+                            <br />Customer Relationship Management<br />
+                            <input type="text" maxLength="100" class="form-control" name="customerRelationshipM">
+                            <br />Database Management<br />
+                            <input type="text" maxLength="100" class="form-control" name="databaseM">
+                            <br />Word Processing<br />
+                            <input type="text" maxLength="100" class="form-control" name="wordProcessing">
+                        </div>
+                        <div class="col-sm-4">
+                            <br />Design and Drafting<br />
+                            <input type="text" maxLength="100" class="form-control" name="designDrafting">
+                            <br />Healthcare<br />
+                            <input type="text" maxLength="100" class="form-control" name="healthcareSoft">
+                            <br />Spreadsheets<br />
+                            <input type="text" maxLength="100" class="form-control" name="spreadsheet">
+                            <br />Payroll<br />
+                            <input type="text" maxLength="100" class="form-control" name="payroll">
+                            <br />Other Software<br />
+                            <input type="text" maxLength="100" class="form-control" name="otherSoftware">
+                        </div>
+                        <div class="col-sm-4">
+                            <br />Presentations<br />
+                            <input type="text" maxLength="100" class="form-control" name="presentations">
+                            <br />Project Management<br />
+                            <input type="text" maxLength="100" class="form-control" name="projectM">
+                            <br />Publishing<br />
+                            <input type="text" maxLength="100" class="form-control" name="publishing">
+                            <br />Transcription<br />
+                            <input type="text" maxLength="100" class="form-control" name="transcription">
+                        </div>
+                    </div>
+                </div><!--END WELL 2 FORM GROUP 1-->
+                <label><br />Please check off which of the following ACCOUNTING skills/functions you are experienced and proficient in:</label>
+                <div class="form-group" style="margin-left: 12px;">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="accountsPayable" value="Accounts Payable">Accounts Payable</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="accountsRecievable" value="Accounts Recievable">Accounts Recievable</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="backupRecovery" value="Backups/Recovery">Backups/Recovery</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="bankReconciliation" value="Bank Reconciliations">Bank Reconciliations</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="collections" value="Collections">Collections</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="deposites" value="Deposites">Deposites</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="financialStatements" value="Financial Statements">Financial Statements</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="fullAccCycle" value="Full Cycle Accounting">Full Cycle Accounting</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="generalJournal" value="General Journal">General Journal</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="incomeTaxReturns" value="Income Tax Returns - Business">Income Tax Returns - Business</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="incomeTaxReturn" value="Income Tax Returns - Personal">Income Tax Returns - Personal</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="multipleEntities" value="Multiple Entities">Multiple Entities</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="payrollBenefits" value="Payroll/Benefits">Payroll/Benefits</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="trialBalances" value="Trial Balances">Trial Balances</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="yearEndFinancials" value="Year End Financials">Year End Financials</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="input-group" style="margin-left: -12px;">
+                                <span class="input-group-addon">
+                                    <input type="checkbox" name="otherMoneySkillCB" aria-label="...">
+                                </span>
+                                <input type="text" maxlength="40" name="otherMoneySkillTB" placeholder="Other, Please specify" class="form-control" aria-label="...">
+                            </div>
+                        </div>
+                        <div class="col-sm-8"></div>
+                    </div>
+                </div><!--END WELL 2 FORM GROUP2-->
+            </div><!--END OF WELL 2 (Software programs)-->
+            <div class="well">
+                <div class="row">
+                    <div class="col-sm-4"><label>Please check off which LABOUR/TRADE/HOSPITALITY skills/functions you are experienced and proficient in.</label></div>
+                    <div class="col-sm-8">
+                        <div class="alert alert-info" role="alert">
+                            <strong>NOTE!&nbsp;&nbsp;</strong>If you are not proficient in any of these areas, or you are applying
+                            for an ADMINISTRATIVE/ACCOUNTING job, please skip this section.
+                        </div>
+                    </div>
+                </div><!--END OF WELL 3 UPPER ROW-->
+                <div class="form-group" style="margin-left: 12px;">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label style="margin-bottom: -2px; margin-left: -12px;">Hospitality:</label>
+                            <div class="checkbox" style="margin-top: 3px;">
+                                <label><input type="checkbox" name="catering" value="Catering">Catering</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="bartending" value="Bartending">Bartending</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="host" value="Host">Host</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="waitress" value="Waitress">Waitress</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="cookChef" value="Cook/Chef">Cook/Chef</label>
+                            </div>
+                            <label style="margin-bottom: -2px; margin-left: -12px;">Mechanical Assembly:</label>
+                            <div class="checkbox" style="margin-top: 3px;">
+                                <label><input type="checkbox" name="discDrive" value="Disc Drive">Disc Drive</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="machineParts" value="Machine Parts">Machine Parts</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label style="margin-bottom: -2px; margin-left: -12px;">Manufacturing:</label>
+                            <div class="checkbox" style="margin-top: 3px;">
+                                <label><input type="checkbox" name="assembly" value="Assembly">Assembly</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="construction" value="Construction">Construction</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="line" value="Line">Line</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="piecework" value="Piecework">Piecework</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="printing" value="Printing">Printing</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="shippingReceiving" value="Shipping/Receiving">Shipping/Receiving</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="warehouse" value="Warehouse">Warehouse</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label style="margin-bottom: -2px; margin-left: -12px;">Electronic Assembly:</label>
+                            <div class="checkbox" style="margin-top: 3px;">
+                                <label><input type="checkbox" name="kitting" value="Kitting">Kitting</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="pcBoards" value="PC Boards">PC Boards</label>
+                            </div>
+                            <label style="margin-bottom: -2px; margin-left: -12px;">Testing/Inspection/Quality Control:</label>
+                            <div class="checkbox" style="margin-top: 3px;">
+                                <label><input type="checkbox" name="automated" value="Automated">Automated</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="manual" value="Manual">Manual</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="final" value="Final">Final</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label>Please list all the current certificates/tickets that you have completed:</label>
+                            <textarea style="margin-bottom: 4px;" class="form-control" rows="1" maxlength="100" name="certsTickets" placeholder="Ex: Fork-Lift, WHMIS, Serving it Right, etc"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-sm-6">
+                            <div class="radio">
+                                Do you have a driver's licence?<br>
+                                <label class="radio-inline"><input type="radio" name="licence" value="yes">Yes</label>
+                                <label class="radio-inline"><input type="radio" name="licence" value="no">No</label>
+                                <br /><br />If yes, what class? Air brake endorsement?<br />
+                                <textarea class="form-control" maxlength="100" rows="2" name="licenceClass" placeholder="Leave blank if inapplicable"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="radio">
+                                Are you capable of lifting over 50lbs?<br>
+                                <label class="radio-inline"><input type="radio" name="lift50" value="yes">Yes</label>
+                                <label class="radio-inline"><input type="radio" name="lift50" value="no">No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--END OF WELL 3-->
+            <div class="row" style="padding-bottom: 70px;">
+                <div class="col-sm-12">
+                    <div class="form-group pull-right" style="padding-top: 10px;">
+                        <button type="submit" class="btn btn-primary" style="width: 90px;">Next</button>
+                    </div>
+                </div>
+            </div><!--"next" button; last for element-->
+        </form>
+    </div>
+
+    <!--========================= FOOTER SECTION =========================-->
+    <footer class="footer">
+        <div class="container" style="padding-top: 12px;">
+            <div class="row">
+                    <div class="col-sm-12">
+                        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span><a class="foot-text" href="tel:250-717-0506">&nbsp;250-717-0506</a>&nbsp;&nbsp;&nbsp;
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a class="foot-text" href="mailto:jobs@okanaganstaffing.com">&nbsp;jobs@okanaganstaffing.com</a>&nbsp;&nbsp;&nbsp;
+                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span><fade>&nbsp;1476 St. Paul Street&nbsp;&nbsp;&nbsp;</fade>
+                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span><fade>&nbsp;Kelowna, BC V1Y 2E6&nbsp;&nbsp;&nbsp;</fade>
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span><a class="foot-text" href="https://www.linkedin.com/in/kevinrenwickatokanaganstaffing">&nbsp;LinkedIn</a>&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="foot-text">Copyright &copy; 2017 Okanagan staffing Services Inc. All rights reserved. Website Design by Nic Henseleit xD</p>
+                    </div>
+            </div>
+			<!--
+                 _
+             .__(.)<  <(Oh shoot, u found me)
+              \___)
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			-->
+        </div>
+    </footer>
+    <!--======================= END FOOTER SECTION ========================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

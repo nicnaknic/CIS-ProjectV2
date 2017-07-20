@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apply For a Job</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/sticky-footer.css" rel="stylesheet">
+    <link href="../css/jasny-bootstrap.min.css" rel="stylesheet" />
+    
+    <style>/**Minor CSS changes that didnt need their own file**/       
+        .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus { /*Change the color of navbar items on hover*/
+            background-color: #EEEEEE;
+        }
+        li, select{
+            padding-top: 5px;
+        }
+        .form-container-padding{
+            padding-top: 30px;
+        }
+        h1{
+            color: rgb(28, 158, 203);
+        }
+        .no-link{
+            color: #337ab7;
+        }
+        .textarea-pad{
+            padding-top: 20px;
+        }
+        textarea{
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <!--=======================NAVBAR ELEMENTS DOWN BELOW, THIS IS THE DEFAULT NAV SYSTEM====================-->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand active" href="http://www.okanaganstaffing.com/">Okanagan Staffing &nbsp; / &nbsp;<small>Apply for a job</small></a>            
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.okanaganstaffing.com/">Home</a></li>
+                    <li><a href="http://www.okanaganstaffing.com/testing/">Testing</a></li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Staffing Solutions<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/staffing-solutions/">Staffing Solutions</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/temporary-staffing/">Temporary Staffing</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/permanent-saffing/">Permanent Staffing</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/staffing-solutions/frequently-asked-questions/">Frequenty Asked Questions</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Client Solutions<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/client-solutions/">Client Solutions</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/business-skill-evaluations/">Business Skill Evaluations</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/human-resources-consulting/">Human Resources Consulting</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/corporate-outplacement-services/">Corporate Outplacement Services</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/client-solutions/client-testimonials/">Client Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Job Seeker Services<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/job-seeker-services/">Job Seeker Services</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/job-openings/">job Openings</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/application-process/">Application Process</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/frequently-asked-questions/">Frequenty Asked Questions</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/applicants-success-stories/">Applicant Success Stories</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/job-seeker-services/resume-tips/">Resume Writing Tips</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/about-us/about-us/">About Us</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/about-us/community-events/">Community Events</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/about-us/kelowna/">About Kelowna</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://www.okanaganstaffing.com/contact/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--=========================================END NAVBAR=============================================-->
+    <div class="container">
+        <div class="page-header">
+            <h1>Job Applicant Form: &nbsp; <small>Permanent Application</small></h1>
+        </div>
+        <ol class="breadcrumb no-link">
+            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/job-openings/">Job Openings </a></li>
+            <li>Apply</li>
+            <li>Basic Application</li>
+            <li><strong>Permanent Application</strong></li>
+        </ol>
+         <form method="POST" action="PermForm.php" enctype = "multipart/form-data" >
+            <div class="well" style="margin-top: 70px;"><!--Perm Job applicant questions-->
+                <div class="row">
+                    <div class="col-sm-12">         
+                        <div class="form-group">
+                            <label>What are your main area's of expertise?</label>
+                            <textarea class="form-control" rows="4" name="permQ1" placeholder="Explain what you main areas of expertise are."></textarea>
+                        </div>
+                        <div class="form-group textarea-pad">
+                            <label>Why are you interested in this role?</label>
+                            <textarea class="form-control" rows="4" name="permQ2" placeholder="Explain why you are interested in this role."></textarea>
+                        </div>
+                        <div class="form-group textarea-pad">
+                            <label>Why do you think you are the perfect candidate?</label>
+                            <textarea class="form-control" rows="4" name="permQ3" placeholder="Explain why you believe you are the perfect candidate for this job opening."></textarea>
+                        </div>
+                        <div class="form-group textarea-pad">
+                            <label>Why did you leave your last job position? If you are still employed, why are you seeking new employment?</label>
+                            <textarea class="form-control" rows="4" name="permQ4" placeholder="Explain your current employment status."></textarea>
+                        </div>
+                        <div class="form-group textarea-pad">
+                            <label>What are you salary expectations for this job opening?</label>
+                            <textarea class="form-control" rows="4" name="permQ5" placeholder="Explain what your salary expectations are for this job."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div><!--END OF WELL 1 (PERM QUESTIONS)-->
+            <div class="well" style="margin-bottom: 70px;">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label>Upload your Resume &amp; Cover Letter: &nbsp;<small>(.docx or pdf files only)</small></label><br />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--ROW FOR UPLOAD & SUBMISSION NOTICE-->
+                    <div class="col-sm-6">
+                        <!--UPLOAD COL FOR RESUME AND COVER LETTER-->
+                        <div class="form-group">
+                            <div class="fileinput fileinput-new" data-provides="fileinput" style="margin-top: 10px;">
+                                <span class="btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="File1" id = "file1"></span>
+                                <span class="fileinput-filename"></span>
+                                <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <!--COL FOR SECOND UPLOAD BUTTON-->
+                        <div class="form-group">
+                            <div class="fileinput fileinput-new" data-provides="fileinput" style="margin-top: 10px;">
+                                <span class="btn btn-default btn-file"><span class="fileinput-new">Select file</span><span class="fileinput-exists">Change</span><input type="file" name="File2" id = "file2"></span>
+                                <span class="fileinput-filename"></span>
+                                <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="alert alert-info">
+                            <strong>IMPORTANT&nbsp;:</strong> PLEASE READ CAREFULLY<br />
+                            <ol>
+                                <li>
+                                    <p>
+                                        I declare that the information provided by myself on this application, as well as my resume, regarding my personal and prior
+                                        employment, academic history and skills is true and free of any false statements or exaggerations. I understand that any false
+                                        statements are grounds for dismissal and/or for removal from the OSS inc temp roster
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        I give permission for Okanagan staffing Services Inc. to verify my employment history by contacting the references I have provide.
+                                        I also agree to cooperate with other efforts to verify my credentials, such as by supplying copies of certificates/degrees, and by
+                                        undergoing skills testing to verify my skill level as indicated on this application.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        I understand that if offered temporary employment through Okanagan Staffing Services Inc., I will be working for and paid by
+                                        Okanagan Staffing Services Inc., and promise to comply with the company policies as stated in the
+                                        Temporary Employment & Non-Disclosure Agreement.
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="administrative" id="administrative" value="" required><strong>By clicking submit I am agreeing to the Terms of Service as layed out by Okanagan Staffing Inc.</strong></label>
+                            </div>
+                            <div class="form-group pull-left" style="padding-right: 35px;">
+                                <button name = "submit" type="submit"  class="btn btn-primary" style="width: 100%; padding-left: 10px; padding-right: 10px;">Submit Application</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--END OF WELL 2 (FILE UPLOADS)-->
+        </form>
+    </div>
+
+-
+
+
+    <!--========================= FOOTER SECTION =========================-->
+    <footer class="footer">
+        <div class="container" style="padding-top: 12px;">
+            <div class="row">
+                    <div class="col-sm-12">
+                        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span><a class="foot-text" href="tel:250-717-0506">&nbsp;250-717-0506</a>&nbsp;&nbsp;&nbsp;
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a class="foot-text" href="mailto:jobs@okanaganstaffing.com">&nbsp;jobs@okanaganstaffing.com</a>&nbsp;&nbsp;&nbsp;
+                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span><fade>&nbsp;1476 St. Paul Street&nbsp;&nbsp;&nbsp;</fade>
+                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span><fade>&nbsp;Kelowna, BC V1Y 2E6&nbsp;&nbsp;&nbsp;</fade>
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span><a class="foot-text" href="https://www.linkedin.com/in/kevinrenwickatokanaganstaffing">&nbsp;LinkedIn</a>&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="foot-text">Copyright &copy; 2017 Okanagan staffing Services Inc. All rights reserved. Website Design by Nic Henseleit xD</p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <!--======================= END FOOTER SECTION ========================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jasny-bootstrap.min.js"></script><!--JS for UPLOAD/File input type-->
+    <script src="../js/checkFile.js"></script>
+</body>
+</html>

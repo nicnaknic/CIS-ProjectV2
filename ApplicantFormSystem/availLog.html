@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    
+IMPORTANT: DONT REMOVE
+
+███╗   ██╗ ██████╗ ██╗    ██╗    ██╗    ██╗██╗████████╗██╗  ██╗    ███████╗ ██████╗ ██╗ ██╗
+████╗  ██║██╔═══██╗██║    ██║    ██║    ██║██║╚══██╔══╝██║  ██║    ██╔════╝██╔═████╗╚═╝██╔╝
+██╔██╗ ██║██║   ██║██║ █╗ ██║    ██║ █╗ ██║██║   ██║   ███████║    ███████╗██║██╔██║  ██╔╝ 
+██║╚██╗██║██║   ██║██║███╗██║    ██║███╗██║██║   ██║   ██╔══██║    ╚════██║████╔╝██║ ██╔╝  
+██║ ╚████║╚██████╔╝╚███╔███╔╝    ╚███╔███╔╝██║   ██║   ██║  ██║    ███████║╚██████╔╝██╔╝██╗
+╚═╝  ╚═══╝ ╚═════╝  ╚══╝╚══╝      ╚══╝╚══╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝    ╚══════╝ ╚═════╝ ╚═╝ ╚═╝
+
+███╗   ███╗ ██████╗ ██████╗ ███████╗      ██╗██████╗ ██╗██╗   ██╗██╗  ███████╗
+████╗ ████║██╔═══██╗██╔══██╗██╔════╝     ██╔╝██╔══██╗██║██║   ██║╚██╗ ██╔════╝
+██╔████╔██║██║   ██║██████╔╝█████╗      ██╔╝ ██║  ██║██║██║   ██║ ╚██╗███████╗
+██║╚██╔╝██║██║   ██║██╔══██╗██╔══╝      ╚██╗ ██║  ██║██║╚██╗ ██╔╝ ██╔╝╚════██║
+██║ ╚═╝ ██║╚██████╔╝██║  ██║███████╗     ╚██╗██████╔╝██║ ╚████╔╝ ██╔╝ ███████║
+╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝      ╚═╝╚═════╝ ╚═╝  ╚═══╝  ╚═╝  ╚══════╝                                                                                           
+
+-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apply For a Job</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/sticky-footer.css" rel="stylesheet" />
+    <style>/**Minor CSS changes that didnt need their own file**/       
+        .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus { /*Change the color of navbar items on hover*/
+            background-color: #EEEEEE;
+        }
+        li, select{
+            padding-top: 5px;
+        }
+        .form-container-padding{
+            padding-top: 30px;
+        }
+        h1{
+            color: rgb(28, 158, 203);
+        }
+        .input-sm{ /**CHANGE THE FONT-WEIGHT FOR reference inputs*/
+            font-weight: 100;
+        }
+        .no-link{
+            color: #337ab7;
+        }
+    </style>
+</head>
+<body>
+    <!--=======================NAVBAR ELEMENTS DOWN BELOW, THIS IS THE DEFAULT NAV SYSTEM====================-->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand active" href="#">Okanagan Staffing &nbsp; / &nbsp;<small>Apply for a job</small></a>            
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.okanaganstaffing.com/">Home</a></li>
+                    <li><a href="http://www.okanaganstaffing.com/testing/">Testing</a></li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Staffing Solutions<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/staffing-solutions/">Staffing Solutions</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/temporary-staffing/">Temporary Staffing</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/permanent-saffing/">Permanent Staffing</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/staffing-solutions/frequently-asked-questions/">Frequenty Asked Questions</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Client Solutions<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/client-solutions/">Client Solutions</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/business-skill-evaluations/">Business Skill Evaluations</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/human-resources-consulting/">Human Resources Consulting</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/corporate-outplacement-services/">Corporate Outplacement Services</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/client-solutions/client-testimonials/">Client Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Job Seeker Services<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/job-seeker-services/">Job Seeker Services</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/job-openings/">job Openings</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/application-process/">Application Process</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/frequently-asked-questions/">Frequenty Asked Questions</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/applicants-success-stories/">Applicant Success Stories</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/job-seeker-services/resume-tips/">Resume Writing Tips</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/about-us/about-us/">About Us</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/about-us/community-events/">Community Events</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/about-us/kelowna/">About Kelowna</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://www.okanaganstaffing.com/contact/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--=========================================END NAVBAR=============================================-->
+    
+    <div class="container">
+        <div class="page-header">
+                <h1>Job Applicant Form: &nbsp; <small>Avaliability &amp; Logistics</small></h1>
+        </div>
+        <ol class="breadcrumb no-link">
+            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/job-openings/">Job Openings </a></li>
+            <li>Apply</li>
+            <li>Basic Application</li> <!--Link back to basicForm before production-->
+            <li>Education &amp; Employment</li>
+            <li>Areas Of Expertise</li>
+            <li><strong>Avaliability &amp; Logistics</strong></li>
+            <li>Upload &amp; Submit</li>
+        </ol>
+        <form method="post" action="AvailLog.php">
+          
+            <div class="well" style="margin-top: 70px;">
+                <div class="form-group">
+                    <label>What is your current avaliability?</label>
+
+                    <div class="radio" style="margin-left: 10px;">                
+                        <label class="radio-inline"><input type="radio" name="availability" value="Daytimes" checked> Daytimes</label>
+                        <label class="radio-inline"><input type="radio" name="availability" value="Evenings"> Evenings &amp; Weekends</label>
+                        <label class="radio-inline"><input type="radio" name="availability" value="Part-Time"> Part Time</label>
+                        <label class="radio-inline"><input type="radio" name="availability" value="Full-Time"> Full Time</label>
+                     </div> 
+
+                    <label style="margin-bottom: 20px;"><br/>If your avaliability is more complex, please enter what hours you are avaliable below:</label><br/>
+                    <table class="table table-bordered table-sm">
+                        <thead>
+                            <tr>
+                                <th><small></small></th>
+                                <th><small>Monday</small></th>
+                                <th><small>Tuesday</small></th>
+                                <th><small>Wednesday</small></th>
+                                <th><small>Thursday</small></th>
+                                <th><small>Friday</small></th>
+                                <th><small>Saturday</small></th>
+                                <th><small>Sunday</small></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><small>Start</small></th>
+                                <th><input type="text" maxlength="" name="monStart" class="form-control input-sm" placeholder="Ex: 9am"/></th>
+                                <th><input type="text" name="tuesStart" class="form-control input-sm"/></th>
+                                <th><input type="text" name="wedStart" class="form-control input-sm"/></th>
+                                <th><input type="text" name="thursStart" class="form-control input-sm"/></th>
+                                <th><input type="text" name="friStart" class="form-control input-sm" /></th>
+                                <th><input type="text" name="satStart" class="form-control input-sm" /></th>
+                                <th><input type="text" name="sunStart" class="form-control input-sm" /></th>
+                            </tr>
+                            <tr>
+                                <th scope="row"><small>Finish</small></th>
+                                <th><input type="text" name="monFinish" class="form-control input-sm" placeholder="Ex: 5pm"/></th>
+                                <th><input type="text" name="tuesFinish" class="form-control input-sm" /></th>
+                                <th><input type="text" name="wedFinish" class="form-control input-sm" /></th>
+                                <th><input type="text" name="thursFinish" class="form-control input-sm" /></th>
+                                <th><input type="text" name="friFinish" class="form-control input-sm" /></th>
+                                <th><input type="text" name="satFinish" class="form-control input-sm" /></th>
+                                <th><input type="text" name="sunFinish" class="form-control input-sm" /></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label><br/>How much notice do you require to be avaliable for job placements?</label>
+                            <input type="text"  maxlength="100"  class="form-control" style="margin-top: 7px;" name="notice" placeholder="Ex: Two weeks notice" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <label><br/>What is your MAIN mode of transportation?</label><br/>
+                            <select class="form-control" name="main_transport" style="margin-top: 7px;" required>
+                                <option selected value="tr" disabled>&nbsp;Please Select&nbsp;</option>
+                                <option value="car">&nbsp;Car</option>
+                                <option value="bus">&nbsp;Bus</option>
+                                <option value="bicycle">&nbsp;Bicycle</option>
+                                <option value="walk">&nbsp;Walk</option>
+                                <option value="carpool">&nbsp;Carpool</option>
+                            </select>
+                        </div>
+                    </div>
+                </div><!--END FORM GROUP-->
+            </div><!--END OF WELL 1--> 
+            <div class="well">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label>Which Okanagan cities are you able and willing to work in? Please check all that apply:</label>
+                        </div>
+                    </div>
+                </div><!--END OF WELL 3 ROW1-->
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group" style="margin-left: 12px;">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="armstrong" value="Armstrong">Armstrong</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="enderby" value="Enderby">Enderby</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="kamloops" value="Kamloops">Kamloops</label>
+                            </div>
+                            
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="kelowna" value="Kelowna">Kelowna</label>
+                            </div>
+                            
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="lakeCountry" value="Lake Country">Lake Country</label>
+                            </div>
+                        </div><!--END OF FORM GROUP 1-->
+                    </div><!--END OF COL-SM-4 (COL1)-->
+                    <div class="col-sm-3">
+                        <div class="form-group" style="margin-left: 12px;">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="okanaganFalls" value="Okanagan Falls">Okanagan Falls</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="oliver" value="Oliver">Oliver</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="osoyoos" value="Osoyoos">Osoyoos</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="oyama" value="Oyama">Oyama</label>
+                            </div>
+                        </div><!--END OF FORM GROUP 2-->    
+                    </div><!--END OF COL-SM-4 (COL2)-->
+                    <div class="col-sm-3">
+                        <div class="form-group" style="margin-left: 12px;">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="peachland" value="Peachland">Peachland</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="penticton" value="Penticton">Penticton</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="salmonArm" value="Salmon Arm">Salmon Arm</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="sicamous" value="Sicamous">Sicamous</label>
+                            </div>
+                        </div><!--END OF FORM GROUP 1-->                        
+                    </div><!--END OF COL-SM-4 (COL3)-->
+                    <div class="col-sm-3">
+                        <div class="form-group" style="margin-left: 12px;">
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="summerland" value="Summerland">Summerland</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="vernon" value="Vernon">Vernon</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="westKelowna" value="West Kelowna">West Kelowna</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="winfield" value="Winfield">Winfield</label>
+                            </div>
+                        </div><!--END OF FORM GROUP 1-->                        
+                    </div><!--END OF COL-SM-4 (COL4)-->
+                </div><!--END OF WELL 3 ROW2-->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <input type="checkbox" name="otherCityCB1" aria-label="...">
+                                </span>
+                                <input type="text" maxlength="100"  name="otherCitytxt1" placeholder="Other, Please specify" class="form-control" aria-label="...">
+                            </div>
+                        </div> 
+                    </div><!--END OF COL-SM-6 (COL1)-->
+                    <div class="col-sm-6">
+                           
+                    </div><!--END OF COL-SM-6 (COL2)-->
+                </div><!--END OF WELL 3 ROW3-->       
+            </div><!--END OF WELL 2-->
+            <div class="well">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label for="minWage">What is the minimum hourly rate you are seeking?</label>
+                            <input type="text" class="form-control" id = "minWage" name="minWage" placeholder="Ex: $30/h" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-9" style="padding-top: 5px;">
+                        <div class="alert alert-info">
+                            <strong>NOTE!</strong>&nbsp;<small>Please note that temp roles vary widely in pay and are different for each role.
+                            We do not guarantee a specific wage; this is for our information purposes only.</small>
+                        </div>
+                    </div>
+                </div>
+            </div><!--END OF WELL 3-->
+            <div class="row" style="padding-bottom: 70px;">
+                <div class="col-sm-12">
+                    <div class="form-group pull-right" style="padding-top: 10px;">
+                        <button type="submit" class="btn btn-primary" style="width: 90px;">Next</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--========================= FOOTER SECTION =========================-->
+    <footer class="footer">
+        <div class="container" style="padding-top: 12px;">
+            <div class="row">
+                    <div class="col-sm-12">
+                        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span><a class="foot-text" href="tel:250-717-0506">&nbsp;250-717-0506</a>&nbsp;&nbsp;&nbsp;
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a class="foot-text" href="mailto:jobs@okanaganstaffing.com">&nbsp;jobs@okanaganstaffing.com</a>&nbsp;&nbsp;&nbsp;
+                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span><fade>&nbsp;1476 St. Paul Street&nbsp;&nbsp;&nbsp;</fade>
+                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span><fade>&nbsp;Kelowna, BC V1Y 2E6&nbsp;&nbsp;&nbsp;</fade>
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span><a class="foot-text" href="https://www.linkedin.com/in/kevinrenwickatokanaganstaffing">&nbsp;LinkedIn</a>&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="foot-text">Copyright &copy; 2017 Okanagan staffing Services Inc. All rights reserved. Website Design by Nic Henseleit xD</p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <!--======================= END FOOTER SECTION ========================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>

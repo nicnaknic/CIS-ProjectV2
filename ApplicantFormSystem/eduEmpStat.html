@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apply For a Job</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/sticky-footer.css" rel="stylesheet">
+    <link href="../css/jasny-bootstrap.min.css" rel="stylesheet" />
+    <script src="myScript.js"></script>
+    <style>/**Minor CSS changes that didnt need their own file**/       
+        .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus { /*Change the color of navbar items on hover*/
+            background-color: #EEEEEE;
+        }
+        li, select{
+            padding-top: 5px;
+        }
+        .form-container-padding{
+            padding-top: 30px;
+        }
+        h1{
+            color: rgb(28, 158, 203);
+        }
+        .no-link{
+            color: #337ab7;
+        }
+        textarea{
+            resize: vertical;
+        }
+        texthold{
+            padding-right: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!--=======================NAVBAR ELEMENTS DOWN BELOW, THIS IS THE DEFAULT NAV SYSTEM====================-->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand active" href="#">Okanagan Staffing &nbsp; / &nbsp;<small>Apply for a job</small></a>            
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://www.okanaganstaffing.com/">Home</a></li>
+                    <li><a href="http://www.okanaganstaffing.com/testing/">Testing</a></li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Staffing Solutions<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/staffing-solutions/">Staffing Solutions</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/temporary-staffing/">Temporary Staffing</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/permanent-saffing/">Permanent Staffing</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/staffing-solutions/frequently-asked-questions/">Frequenty Asked Questions</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Client Solutions<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/client-solutions/">Client Solutions</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/business-skill-evaluations/">Business Skill Evaluations</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/human-resources-consulting/">Human Resources Consulting</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/client-solutions/corporate-outplacement-services/">Corporate Outplacement Services</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/client-solutions/client-testimonials/">Client Testimonials</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Job Seeker Services<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/job-seeker-services/">Job Seeker Services</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/job-openings/">job Openings</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/application-process/">Application Process</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/staffing-solutions/frequently-asked-questions/">Frequenty Asked Questions</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/applicants-success-stories/">Applicant Success Stories</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/job-seeker-services/resume-tips/">Resume Writing Tips</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://www.okanaganstaffing.com/about-us/about-us/">About Us</a></li>
+                            <li><a href="http://www.okanaganstaffing.com/about-us/community-events/">Community Events</a></li>
+                            <li style="padding: 5px 0px 5px 0px;"><a href="http://www.okanaganstaffing.com/about-us/kelowna/">About Kelowna</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://www.okanaganstaffing.com/contact/">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--=========================================END NAVBAR=============================================-->
+
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Job Applicant Form: &nbsp; <small>Education &amp; Employment</small></h1>
+        </div>
+        <ol class="breadcrumb no-link">
+            <li><a href="http://www.okanaganstaffing.com/job-seeker-services/job-openings/">Job Openings </a></li>
+            <li>Apply</li>
+            <li>Basic Application</li> <!--Link back to basicForm before production-->
+            <li><strong>Education &amp; Employment</strong></li>
+            <li>Area Of Expertise</li>
+            <li>Avaliability &amp; Logistics</li>
+            <li>Upload &amp; Submit</li>
+        </ol>
+        <form method="post" action="EduEmpStat.php">
+            <div class="row" style="margin-top: 70px;">
+                <div class="form-group">
+                    <div class="col-sm-6">
+                        <div class="well">
+                            <label>Are you currently a student?</label>
+                            <div class="radio">
+                                <label class="radio-inline"><input type="radio" id="isStudentYes"  name="isStudent" value="yes" required>Yes</label>
+                                <label class="radio-inline"><input type="radio" id="isStudentNo" name="isStudent" value="no">No</label>
+                                <br /><br />If so, what are you studying and where? What is your career goal?<br />
+                                <textarea  class="form-control" id = "careerGoal" rows="3" name="careerGoals" maxlength="250"   placeholder="Leave blank if you are not a student"></textarea>
+                            </div>
+                            <br /><label>What languages are you proficient in?</label>
+                            <textarea style="margin-bottom: 4px;" class="form-control" rows="3" name="profLanguages" maxlength="250"   placeholder="Briefly describe your language capabilities" required></textarea>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="well">
+                            <label>What is your highest level of education you have completed?</label>
+                            <div class="row" style="padding-left: 12px;">
+                                <div class="col-sm-6">
+                                    <div class="radio">
+                                        <label><input type="radio" name="educationLevel" value="High School Diploma" checked>High School Diploma</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="educationLevel" value="Associate Degree">Associate Degree</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="educationLevel" value="Bachelors Degree">Bachelor's Degree</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="educationLevel" value="Masters Degree">Master's Degree</label>
+                                    </div>
+                                </div><!--END OF INNER COL-SM-6 (RIGHT SIDE)-->
+                                <div class="col-sm-6">
+                                    <div class="radio">
+                                        <label><input type="radio" name="educationLevel" value="Doctoral Degree">Doctoral Degree (PHD)</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="educationLevel" value="Technical Training">Technical Training</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="educationLevel" value="Certificate">Certificate</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="educationLevel" value="Diploma">Diploma</label>
+                                    </div>
+                                </div><!--END OF INNER COL-SM-6 (LEFT SIDE)-->
+                            </div><!--END OF INNER ROW-->
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <input type="radio" name="educationLevel" value="Apprenticeship">   
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." name="tradeType"  maxlength="25"   placeholder="Apprenticeship: Which trade & level completed?">
+                            </div><br />
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <input type="radio" name="educationLevel" value="Journeyman">
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." name="tradeType2"  maxlength="25"   placeholder="JourneyMan/Red Seal: Which trade?">
+                            </div><br />
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <input type="radio" name="educationLevel" value="Other">
+                                </span>
+                                <input type="text" class="form-control" aria-label="..." name="eduOther"  maxlength="25"   placeholder="Other: Please specify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--END OUTER ROW: CONTAINS 2 TOP WELLS-->
+            <div class="well">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="empStat">What is your current employment status?</label>
+                                <input type="text" maxLength="50" class="form-control" name="empStat" id="empStat" placeholder="Ex: Employed full time" required>
+                            </div>
+                        </div>
+                        <div class="col-sm-6"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label>What type of work are you mainly seeking?</label><br />
+                            <div class="radio">
+                                <label><input type="radio" name="opt1" value= "Temporary work only" checked>Temporary work only</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="opt1" value= "Temporary work prefered, but will take Permanent role if the right fit">Temporary work prefered, but will take Permanent role if the right fit</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="opt1" value= "Temporary or Permanent work, both are fine">Temporary or Permanent work, both are fine</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="radio">
+                                <br/><label><input type="radio" name="opt1" value= "Permanent work preferred, am only seeking temporary work while I seek a Permanent role">
+                                Permanent work preferred, am only seeking temporary work while I seek a Permanent role</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="opt1" value= "Permanent work preferred, will only accept Temporary work if there is a possibility it could go Permanent">
+                                Permanent work preferred, will only accept Temporary work if there is a possibility it could go Permanent</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="opt1" value= "Permanent work only">Permanent work only</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--END OF WELL 2-->
+            <div class="well">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label>What is your current work status in Canada?</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <ul>
+                                <li>
+                                    <div class="radio">
+                                        Are you a Canadian Citizen?<br/>
+                                        <label class="radio-inline"><input id="isCitizenYes" type="radio" name="status1" value="yes" required>Yes</label>
+                                        <label class="radio-inline"><input id="isCitizenNo" type="radio" name="status1" value="no">No</label>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div class="radio">
+                                                If not, are you legally entitle to work in Canada? Leave blank if inapplicable<br />
+                                                <label class="radio-inline"><input id="isLegalYes" type="radio" name="status2" value="yes">Yes</label>
+                                                <label class="radio-inline"><input id ="isLegalNo" type="radio" name="status2" value="no">No</label>
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                </li>
+                                <li>
+                                    <div class="radio">
+                                        Have you ever been bonded?<br/>
+                                        <label class="radio-inline"><input type="radio" name="status5" value="yes" required>Yes</label>
+                                        <label class="radio-inline"><input type="radio" name="status5" value="no">No</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="radio">
+                                        Are you eligible for bonding?<br />
+                                        <label class="radio-inline"><input type="radio" name="status6" value="yes" required>Yes</label>
+                                        <label class="radio-inline"><input type="radio" name="status6" value="no">No</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <ul>
+                                <li>
+                                    <div class="radio">
+                                        Do you have a criminal record for which you have not recieved a pardon?<br>
+                                        <label class="radio-inline"><input type="radio" name="status3" value="yes" required>Yes</label>
+                                        <label class="radio-inline"><input type="radio" name="status3" value="no">No</label>
+                                        <br/><br/>If yes, please provide a brief description of your record<br/>
+                                        <textarea class="form-control" rows="2" maxlength="25"   name="status3TB" placeholder="Leave blank if inapplicable"></textarea>
+                                    </div>
+                                    
+                                </li>
+                                <li>
+                                    <div class="radio">
+                                        Would you give Okanagan Staffing Services permission to conduct a Criminal Records Check, should it be requested by a client?<br>
+                                        <label class="radio-inline"><input type="radio" name="status4" value="yes" required>Yes</label>
+                                        <label class="radio-inline"><input type="radio" name="status4" value="no">No</label>
+                                        <br /><br />If no, please provide a brief explanation of why<br />
+                                        <textarea class="form-control" rows="2" maxlength="25"   name="status4TB" placeholder="Leave blank if inapplicable"></textarea>
+                                    </div>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div><!--END COL-SM-6-->
+                </div><!--END ROW-->
+            </div><!--END OF WELL 3-->  
+            <div class="row" style="padding-bottom: 70px;">
+                <div class="col-sm-12">
+                    <div class="form-group pull-right" style="padding-top: 10px;">
+                        <button type="submit" class="btn btn-primary" style="width: 90px;">Next</button>
+                    </div>
+                </div>
+            </div>      
+        </form>
+    </div>
+
+
+
+    <!--========================= FOOTER SECTION =========================-->
+    <footer class="footer">
+        <div class="container" style="padding-top: 12px;">
+            <div class="row">
+                    <div class="col-sm-12">
+                        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span><a class="foot-text" href="tel:250-717-0506">&nbsp;250-717-0506</a>&nbsp;&nbsp;&nbsp;
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a class="foot-text" href="mailto:obs@okanaganstaffing.com">&nbsp;jobs@okanaganstaffing.com</a>&nbsp;&nbsp;&nbsp;
+                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span><fade>&nbsp;1476 St. Paul Street&nbsp;&nbsp;&nbsp;</fade>
+                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span><fade>&nbsp;Kelowna, BC V1Y 2E6&nbsp;&nbsp;&nbsp;</fade>
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span><a class="foot-text" href="https://www.linkedin.com/in/kevinrenwickatokanaganstaffing">&nbsp;LinkedIn</a>&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="foot-text">Copyright &copy; 2017 Okanagan staffing Services Inc. All rights reserved. Website Design by Nic Henseleit xD</p>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    <!--======================= END FOOTER SECTION ========================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jasny-bootstrap.min.js"></script>
+</body>
+</html>
